@@ -38,7 +38,7 @@ resource "aws_launch_template" "wk21_bastion21_database" {
   image_id               = data.aws_ami.linux.id
   instance_type          = var.database_instance_type
   vpc_security_group_ids = [var.private_sg]
-  user_data              = filebase64("apache_install.sh")
+  user_data              = filebase64("bootstrap.sh")
 
   tags = {
     Name = "wk21_database"

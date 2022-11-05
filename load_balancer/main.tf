@@ -1,6 +1,6 @@
 #loadbalancer/main.tf
 
-# Create Load balancer
+#Create load balancer
 resource "aws_lb" "wk21_lb" {
   name               = "wk21-loadbalancer"
   internal           = false
