@@ -33,7 +33,7 @@ resource "aws_autoscaling_group" "wk21_bastion" {
   }
 }
 
-resource "aws_launch_template" "wk21_bastion21_database" {
+resource "aws_launch_template" "wk21_database" {
   name_prefix            = "wk21_database"
   image_id               = data.aws_ami.linux.id
   instance_type          = var.database_instance_type
