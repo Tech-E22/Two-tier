@@ -14,7 +14,7 @@ module "ec2" {
   public_subnet  = module.networking.public_subnet
   elb            = module.load_balancer.elb
   alb_tg         = module.load_balancer.alb_tg
-  key_name       = "wk_project21"
+  key_name       = "wk21_project"
 }
 
 module "load_balancer" {
